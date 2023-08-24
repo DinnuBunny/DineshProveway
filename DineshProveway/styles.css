@@ -1,11 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
 
+body {
+    box-sizing: border-box;
+    margin: 0;
+}
+
 .page-container {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-image: url('https://res.cloudinary.com/dinnubunny/image/upload/v1691478755/good-l-corp-no-need-wait-for-sale-purchase-quality-shopping-carts-that-last-1024x682_wvqwsh.jpg');
+    background-size: auto;
+    backdrop-filter: opacity(30%);
 }
 
 .bundle-save {
@@ -33,6 +41,7 @@
     border-radius: 3.615px;
     border: 0.904px solid #007F61;
     margin-bottom: 18px;
+
 }
 
 .visible-card {
@@ -153,10 +162,14 @@
 
 .select-card {
     margin-right: 8px;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
 }
 
 .active-pair {
-    background-color: #F4FBF9;
+    /* background: rgba(255, 255, 255, 0.5); */
+    backdrop-filter: blur(2px);
 }
 
 .inactive-pair {
@@ -183,8 +196,6 @@
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    opacity: 0.6;
-
 }
 
 .total {
